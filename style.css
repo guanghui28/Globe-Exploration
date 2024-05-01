@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	overflow: hidden;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.app {
+	display: flex;
+	height: 100vh;
+	background-color: black;
+}
+.content {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 2rem;
+	color: white;
+}
+
+.heading {
+	text-transform: uppercase;
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	line-height: 1.5;
+}
+
+.description {
+	font-size: 1.4rem;
+	line-height: 1.2;
+	color: #ccc;
+	margin-bottom: 2rem;
+}
+
+.btn-cta {
+	color: white;
+	display: inline-block;
+	background-color: #15d471;
+	text-decoration: none;
+	padding: 1rem 2rem;
+	border-radius: 10000px;
+	transition: all ease 0.3s;
+}
+
+.btn-cta:hover {
+	transform: translateY(-5px);
+}
+
+#canvasContainer {
+	flex-grow: 1;
+}
